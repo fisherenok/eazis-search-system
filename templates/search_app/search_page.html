@@ -1,0 +1,24 @@
+{% include 'search_app/navigation.html' %}
+{% block content %}
+<div class="mt-4 container">
+    <div class="row justify-content-md-center">
+        <div class="col-6">
+            <div class="mt-4 container">
+                <div class="row">
+
+
+                    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+                    <form action="" method="post">
+                        <h1>Search information</h1>
+                    {% csrf_token %}
+                        <label for="query"><h4>Input request:</h4> </label>
+                        <input id="query" type="text" name="query" required value="{{ query_string }}">
+                        <button type="submit" class="btn btn-primary">Find</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

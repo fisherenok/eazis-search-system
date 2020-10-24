@@ -1,0 +1,17 @@
+{% include 'search_app/navigation.html' %}
+{% block content %}
+<div class="mt-4 container">
+    <div class="row justify-content-md-center">
+        <div class="col-6">
+            <div class="mt-4 container">
+                <div class="row">
+                    <h1>User's manual</h1>
+                    <p>To search, enter your query in the field on the page <a href="{% url 'search' %}">search</a> and press the "Find" button.
+                    </p>
+                    <p>When <a href="{% url 'upload' %}">updating or editing</a> files, update the data!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

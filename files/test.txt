@@ -1,0 +1,6 @@
+test
+car
+man
+python
+javaScript
+android
